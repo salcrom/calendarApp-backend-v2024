@@ -21,7 +21,7 @@ app.use(express.static("public"));
 // Lectura y parseo del body
 app.use(express.json());
 
-// Rutas
+// Rutas -- la última permite redireccionar desde cualquier dirección que se pretenda entrar
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/events", require("./routes/events"));
 
